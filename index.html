@@ -13,9 +13,44 @@
   </head>
 
   <body>
+    <script>
+        function validateForm() {
+        if (document.getElementById("msg").value == "") {
+          alert("Isikan Pesan Anda");
+          return false;
+        }
+      }
+    </script>
+    <!-- Awal Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#jumbotron">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#edu">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#register-box">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- Akhir Navbar -->
+
     <!-- Jumbotron -->
     <section class="jumbotron text-center pt">
-      <img src="foto.png" alt="Diah Martina Lestari" width="200" class="rounded-circle" />
+      <img src="img/foto.png" alt="Diah Martina Lestari" width="200" class="rounded-circle" />
       <h1 class="display-6">Diah Martina Lestari</h1>
       <p class="lead">Undergraduate Student at Jenderal Soedirman University</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -33,7 +68,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col"><h3>Education</h3></div>
-          <div class="col"><h3>Certificates</h3></div>
+          <div class="col"><h3>Certification</h3></div>
         </div>
         <div class="row justify-content-around">
           <div class="col-5">
@@ -88,7 +123,7 @@
         <div class="row">
           <div class="col-md-4 text-center">
             <div class="card">
-              <img src="networking.jpg" class="card-img-top" alt="Networking" />
+              <img src="img/networking.jpg" class="card-img-top" alt="Networking" />
               <div class="card-body">
                 <p class="card-text">
                   <strong>Networking</strong> <br />
@@ -99,7 +134,7 @@
           </div>
           <div class="col-md-4 text-center">
             <div class="card">
-              <img src="web.jpg" class="card-img-top" alt="Front-End Web" />
+              <img src="img/web.jpg" class="card-img-top" alt="Front-End Web" />
               <div class="card-body">
                 <p class="card-text">
                   <strong>Web Programming</strong> <br />
@@ -110,7 +145,7 @@
           </div>
           <div class="col-md-4 text-center">
             <div class="card">
-              <img src="writing.jpg" class="card-img-top" alt="Writing" />
+              <img src="img/writing.jpg" class="card-img-top" alt="Writing" />
               <div class="card-body">
                 <p class="card-text">
                   <strong>Writing</strong> <br />
@@ -124,9 +159,58 @@
     </section>
     <!-- Akhir Skill -->
 
+    <!-- Awal Form -->
+    <section>
+      <div class="register-box">
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <h2 style="color: #27aca7;"><strong>Connect With Me</strong></h2>
+            </div>
+            <div class="card-body">
+                <div class="mt-2 mb-2">
+                                    </div>
+                <form name="form" action="https://www.instagram.com/diahml/" method="post">
+                    <!-- <input type="hidden" name="_token" value="0z0IwlIW7ReQ0QXyaAHDMj8x3FUTDBMEQyB3oXWk">                    -->
+                     <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" name="name" required="" value="">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" name="email" required="" value="">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea class="form-control" placeholder="Pesan Anda" id="msg"></textarea>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="submit" onclick="return validateForm()" class="btn btn-block" style="background-color: #27aca7; color: white;">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+    </section>
+    <!-- Akhir Form -->
+
     <!-- Footer -->
     <footer>
-      <p class="footer text-center text-white">Created by Diah Martina Lestari | H1D020066 | 081329915594</p>
+      <p class="footer text-center text-white">Created by Diah Martina Lestari | H1D020066</p>
     </footer>
     <!-- Akhir Footer -->
 
